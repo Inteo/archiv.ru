@@ -3196,10 +3196,10 @@ a:hover .icon-confirm,
   padding-top: 18px;
 }
 .scroll-down__arr .icon-arr {
-  transform: rotate(90deg)!important;
-}
-.scroll-down__item.active .scroll-down__arr .icon-arr {
   transform: rotate(-90deg)!important;
+}
+.scroll-down__btn.collapsed .scroll-down__arr .icon-arr {
+  transform: rotate(90deg)!important;
 }
 .scroll-down__content-holder {
   padding: 55px 55px 60px;
@@ -3212,13 +3212,13 @@ a:hover .icon-confirm,
   }
 }
 .scroll-down__content {
-  max-height: 0;
+  /*max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);*/
 }
 .scroll-down__item.active .scroll-down__content {
-  max-height: 9999px;
-  transition: max-height 1s ease-in-out;
+  /*max-height: 9999px;
+  transition: max-height 1s ease-in-out;*/
 }
 .scroll-down__content .list-styled {
   margin-bottom: 40px;
