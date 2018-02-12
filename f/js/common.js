@@ -1,3 +1,7 @@
+function getGridSize() {
+	return ($(window).innerWidth() < 768) ? 1 :
+			($(window).innerWidth() < 992) ? 2 : 3;
+};
 function metrikaReach(goal_name, goal_params) {
 	var goal_params = goal_params || {};
 	for (var i in window) {
@@ -863,8 +867,8 @@ var inteoJSCore = (function () {
 
 			var $mainNavigation = $('.header__menu'),
 				$menuToggle = $('.main-menu-toggle[aria-controls="main-menu"]');
-			$('.header__menu > ul > li.menu-item-has-children > a')
-				.append('<span class="sub-menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="14" viewBox="0 0 27 14"><path d="M3,3l11,8L24,3"/></svg></span>');
+			/*$('.header__menu > ul > li.menu-item-has-children > a')
+				.append('<span class="sub-menu-toggle"><svg xmlns="http://www.w3.org/2000/svg" width="27" height="14" viewBox="0 0 27 14"><path d="M3,3l11,8L24,3"/></svg></span>');*/
 			$('.header__menu > ul > li.menu-item-has-children > ul').attr('data-collapsed', 'true');
 
 			function debounce(threshold, callback) {
@@ -995,7 +999,11 @@ function onloadRecaptcha() {
 	}
 }
 
-$(document).ready(function() { 
+$(document).ready(function() {
+  $(".scroll-down__btn").click(function(){
+    $(this).closest(".scroll-down__item").toggleClass("active");
+    return false;
+  });
 	inteoJSCore.init();
 	/*
 	$(".fancybox").fancybox({
@@ -1034,7 +1042,7 @@ $(document).ready(function() {
 	$('a[rel^="external"]').click(function(){
 		$(this).attr('target','_blank');
 	});
-	$("[data-fancybox]").fancybox({
+	/*$("[data-fancybox]").fancybox({
 		buttons : [
 			'slideShow',
 			'fullScreen',
@@ -1042,8 +1050,8 @@ $(document).ready(function() {
 			'close'
 		],
 		animationEffect : "fade"
-	});
-	$('.modal-form').fancybox({
+	});*/
+	/*$('.modal-form').fancybox({
 		ajax: {
 			settings : {
 				method: 'POST',
@@ -1070,7 +1078,7 @@ $(document).ready(function() {
 				slide.$content.find('[name='+key.toUpperCase()+']').val(value).attr('readonly',true);
 			});
 		}
-	});
+	});*/
 	
 	$(document).on('click', '[data-href]', function(){
 		window.location.href = $(this).data('href');
@@ -1082,7 +1090,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$('[data-toggle="tooltip"]').tooltip();
+	/*$('[data-toggle="tooltip"]').tooltip();*/
 
 	/* Basket actions */
 	$(document).on('click', '[data-basket-add]', function(e){
