@@ -2095,6 +2095,31 @@ a:hover .icon-confirm,
   height: 67px;
   background-position: -1149px -98px;
 }
+.icon-access {
+  width: 67px;
+  height: 67px;
+  background-position: -1504px -100px;
+}
+.icon-preparation2 {
+  width: 67px;
+  height: 67px;
+  background-position: -1220px -99px;
+}
+.icon-reception {
+  width: 67px;
+  height: 66px;
+  background-position: -1291px -100px;
+}
+.icon-topography {
+  width: 67px;
+  height: 66px;
+  background-position: -1362px -100px;
+}
+.icon-provision {
+  width: 67px;
+  height: 67px;
+  background-position: -1433px -100px;
+}
 .user__item {
   font-size: 14px;
 }
@@ -2983,6 +3008,25 @@ a:hover .icon-confirm,
   padding-left: 45px;
   margin-bottom: 45px;
 }
+.list-checked__item_boxes {
+  margin-top: 100px;
+  padding-bottom: 260px;
+  z-index: 1;
+}
+.list-checked__item_boxes:after {
+  content: '';
+  position: absolute;
+  left: -100px;
+  right: -60px;
+  top: -50px;
+  bottom: 0;
+  background: #fff url(../../f/i/boxes.png) no-repeat;
+  background-position: 100px bottom;
+  z-index: -1;
+}
+.list-checked__item a {
+  color: #e12d48;
+}
 .list-checked__item:before {
   position: absolute;
   content: '';
@@ -3263,4 +3307,19 @@ a:hover .icon-confirm,
 }
 .option__content .list-styled {
   margin-bottom: 40px;
+}
+.storage {
+  padding: 100px 0;
+  background: #f5f5f5;
+  margin-bottom: 100px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .storage {
+    background: #f5f5f5 url(../../f/i/storage.png) no-repeat;
+    background-position: center bottom;
+  }
+}
+.storage .btn {
+  margin-bottom: 20px;
 }
