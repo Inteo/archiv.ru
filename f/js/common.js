@@ -1000,10 +1000,6 @@ function onloadRecaptcha() {
 }
 
 $(document).ready(function() {
-  /*$(".scroll-down__btn").click(function(){
-    $(this).closest(".scroll-down__item").toggleClass("active");
-    return false;
-  });*/
 	inteoJSCore.init();
 	/*
 	$(".fancybox").fancybox({
