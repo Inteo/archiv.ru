@@ -2180,6 +2180,18 @@ a:hover .icon-confirm,
   height: 67px;
   background-position: -2108px -73px;
 }
+.icon-download {
+  width: 16px;
+  height: 18px;
+  background-position: -1195px -29px;
+  margin: -2px 20px 0 0;
+}
+.icon-sign {
+  width: 16px;
+  height: 18px;
+  background-position: -1195px -55px;
+  margin: -2px 15px 0 0;
+}
 .user__item {
   font-size: 14px;
 }
@@ -2205,6 +2217,11 @@ a:hover .icon-confirm,
   margin: 0 0 60px -55px;
   padding: 0;
   text-align: center
+}
+.main-services .nav-tabs_small.nav {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 50px;
 }
 .main-services .nav-item {
   display: inline-block;
@@ -2244,6 +2261,9 @@ a:hover .icon-confirm,
   margin: -2px;
   max-width: calc(100% + 4px);
 }
+.main-services_small .main-services__links-link {
+  padding: 40px 20px 50px;
+}
 .main-services__links-link:hover {
   z-index: 10;
   box-shadow: 0 10px 30px rgba(0,0,0,.05);
@@ -2254,15 +2274,39 @@ a:hover .icon-confirm,
   margin-bottom: 22px;
   padding-top: 10px;
 }
+.main-services_small .main-services__links-image {
+  height: 25px;
+}
+.main-services__num {
+  font-size: 16px;
+  color: #e22c49;
+  line-height: 25px;
+  font-weight: lighter;
+  font-style: normal;
+}
 .main-services__links-title {
   font-size: 20px;
   line-height: 30px;
   font-weight: bold;
   display: block;
 }
+.main-services_small .main-services__links-title {
+  font-size: 16px;
+  line-height: 25px;
+}
 .main-phrase {
-  height: 722px;
-  background: url(../i/phrase.jpg) center bottom no-repeat; 
+  padding: 100px 0 50px;
+  background-color: #f5f5f5;
+}
+@media (min-width: 768px) {
+  .main-phrase {
+    background: #f5f5f5 url(../i/phrase.jpg) center bottom no-repeat;
+  }
+}
+@media (min-width: 992px) {
+  .main-phrase {
+    padding: 30px 0;
+  }
 }
 .main-phrase__content {
   display: -webkit-box;
@@ -2277,8 +2321,12 @@ a:hover .icon-confirm,
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100%;
   min-height: 100%;
+}
+@media (min-width: 768px) {
+  .main-phrase__content {
+    height: 100%;
+  }
 }
 .main-phrase__holder {
   -webkit-box-flex: 1;
@@ -2319,18 +2367,34 @@ a:hover .icon-confirm,
   font-size: 40px;
   font-weight: bold;
 }
+.main-facts__item dt span {
+  font-size: 14px;
+  line-height: 0;
+}
 .main-facts__item dd {
   font-size: 14px;
 }
 .main-facts__item dd.invert {
-  color: #fff;
+
+}
+@media (min-width: 768px) {
+  .main-facts__item dd.invert {
+    color: #fff;
+  }
 }
 .slick-slide {
   height: auto;
 }
 .main-activity {
-  height: 752px;
-  background: url(../i/activity.jpg) center bottom no-repeat; 
+  background-color: #f5f5f5;
+  padding: 50px 0 150px;
+}
+@media (min-width: 768px) {
+  .main-activity {
+    height: 752px;
+    padding: 0 0 150px 0;
+    background: #f5f5f5 url(../i/activity.jpg) center bottom no-repeat;
+  }
 }
 .main-activity ul.list-styled {
   margin-bottom: 40px;
@@ -2348,8 +2412,12 @@ a:hover .icon-confirm,
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100%;
-  min-height: 645px;
+}
+@media (min-width: 768px) {
+  .main-activity__content {
+    height: 100%;
+    min-height: 645px;
+  }
 }
 .main-activity__holder {
   -webkit-box-flex: 1;
@@ -2446,15 +2514,26 @@ a:hover .icon-confirm,
   padding-bottom: 50px;
   background: #fff;
 }
+
 .events__content .icon-calendar {
-  margin-top: 6px
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .events__content .icon-calendar {
+    margin-bottom: 0;
+  }
 }
 .events__title {
   font-size: 30px;
   line-height: 40px;
   font-weight: bold;
   margin-bottom: 10px;
-  margin-left: -30px;
+}
+@media (min-width: 768px) {
+  .events__title {
+    margin-left: -30px;
+  }
 }
 .events__title a {
   display: inline-block;
@@ -2462,7 +2541,11 @@ a:hover .icon-confirm,
 .events__date {
   font-weight: bold;
   color: #e22c49;
-  margin-left: -30px
+}
+@media (min-width: 768px) {
+  .events__date {
+    margin-left: -30px;
+  }
 }
 .events__text {
   margin-bottom: 40px;
@@ -3403,4 +3486,27 @@ a:hover .icon-confirm,
   padding: 0 10px;
   color: #e02c47;
   font-style: normal;
+}
+.margbot {
+  margin-bottom: 100px;
+}
+.environment {
+  min-height: 280px;
+  border: 2px solid #eee;
+  padding: 50px 30px;
+}
+@media (min-width: 576px) {
+  .environment {
+    padding: 50px 0;
+    background: url(../../f/i/environment.png) center calc(100% - 60px) no-repeat;
+  }
+}
+.environment__title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.environment__text {
+  margin-bottom: 30px;
 }
