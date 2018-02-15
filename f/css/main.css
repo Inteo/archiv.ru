@@ -1790,6 +1790,11 @@ a:hover .icon-user {
   height: 67px;
   background-position: -76px 0;
 }
+.icon-storage2 {
+  width: 67px;
+  height: 67px;
+  background-position: -478px 0;
+}
 .icon-finance {
   width: 67px;
   height: 67px;
@@ -3047,8 +3052,13 @@ a:hover .icon-confirm,
   margin: 20px 0;
   display: none;
 }
+.subtitle__ico {
+  display: none;
+  margin-top: 8px;
+}
 @media (min-width:576px) {
-  .subtitle__redline {
+  .subtitle__redline,
+  .subtitle__ico {
     display: block;
   }
 }
@@ -3377,4 +3387,20 @@ a:hover .icon-confirm,
 }
 .storage .btn {
   margin-bottom: 20px;
+}
+.breadcrumbs {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 60px;
+  margin-bottom: 60px;
+}
+.breadcrumbs li {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.breadcrumbs li i {
+  padding: 0 10px;
+  color: #e02c47;
+  font-style: normal;
 }
