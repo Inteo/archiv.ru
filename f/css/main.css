@@ -2115,10 +2115,30 @@ a:hover .icon-confirm,
   height: 66px;
   background-position: -1362px -100px;
 }
+.icon-select-destruct {
+  width: 67px;
+  height: 66px;
+  background-position: -1249px -28px;
+}
+.icon-audit {
+  width: 67px;
+  height: 66px;
+  background-position: -1328px -28px;
+}
 .icon-provision {
   width: 67px;
   height: 67px;
   background-position: -1433px -100px;
+}
+.icon-secret {
+  width: 67px;
+  height: 67px;
+  background-position: -1403px -28px;
+}
+.icon-public {
+  width: 66px;
+  height: 67px;
+  background-position: -1577px -73px;
 }
 .user__item {
   font-size: 14px;
