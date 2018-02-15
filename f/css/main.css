@@ -2140,6 +2140,41 @@ a:hover .icon-confirm,
   height: 67px;
   background-position: -1577px -73px;
 }
+.icon-model {
+  width: 67px;
+  height: 67px;
+  background-position: -1651px -73px;
+}
+.icon-new-soft {
+  width: 67px;
+  height: 67px;
+  background-position: -1726px -73px;
+}
+.icon-analysis {
+  width: 67px;
+  height: 67px;
+  background-position: -1801px -73px;
+}
+.icon-demonstration {
+  width: 67px;
+  height: 67px;
+  background-position: -1873px -73px;
+}
+.icon-adaptation {
+  width: 67px;
+  height: 67px;
+  background-position: -1950px -73px;
+}
+.icon-indicators {
+  width: 67px;
+  height: 67px;
+  background-position: -2031px -73px;
+}
+.icon-modification {
+  width: 67px;
+  height: 67px;
+  background-position: -2108px -73px;
+}
 .user__item {
   font-size: 14px;
 }
