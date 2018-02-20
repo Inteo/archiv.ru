@@ -2221,6 +2221,11 @@ a:hover .icon-confirm,
   background-position: -1195px -55px;
   margin: -2px 15px 0 0;
 }
+.icon-learning {
+  width: 63px;
+  height: 67px;
+  background-position: -2486px -77px;
+}
 .user__item {
   font-size: 14px;
 }
