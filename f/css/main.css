@@ -1688,6 +1688,11 @@ a:hover .sub-menu-toggle svg path {
     background-size: 2758px 172px;
   }
 }
+.icon-quot {
+  width: 24px;
+  height: 20px;
+  background-position: -1220px -53px;
+}
 .icon-security {
   width: 67px;
   height: 66px;
@@ -3738,4 +3743,112 @@ a:hover .icon-confirm,
   background: #f5f5f5;
   color: #000;
   font-weight: normal;
+}
+.team {
+  background: #f5f5f5;
+}
+.team .scenery {
+  min-height: 704px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  height: auto;
+  background-position-y: bottom;
+}
+@media (max-width: 567px) {
+  .team .scenery {
+    background-image: none !important;
+  }
+}
+.team .scene__content {
+  height: auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.team .breadcrumbs {
+  margin-bottom: -90px;
+  z-index: 3;
+  position: relative;
+}
+.team .scene__counter {
+  padding-top: 5px;
+}
+.team .scene__title {
+  margin-bottom: 60px;
+}
+.employee-name {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+.employee-name b {
+  display: block;
+  margin-bottom: 2px;
+}
+.employee-name p {
+  margin-bottom: 2px;
+}
+.employee-name:before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #000;
+  width: 15px;
+  left: 0;
+  top: 13px;
+}
+.employee:nth-of-type(even) {
+  background: #f5f5f5;
+}
+.employee__content {
+  min-height: 645px;
+  padding-bottom: 60px;
+}
+@media (min-width: 992px) {
+  .employee__content {
+    padding-bottom: 0;
+  }
+}
+.employee__photo {
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #eee;
+}
+@media (min-width: 992px) {
+  .employee__photo {
+    padding-top: 0;
+    margin-bottom: 0;
+    border: none;
+  }
+}
+.employee__photo img {
+  max-width: 50%;
+}
+@media (min-width: 567px) {
+  .employee__photo img {
+    max-width: 40%;
+  }
+}
+@media (min-width: 992px) {
+  .employee__photo img {
+    max-width: 100%;
+  }
+}
+.employee__title {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+  margin-bottom: 60px;
+}
+.employee__quot {
+  padding-top: 5px;
+}
+.employee__text {
+  margin-bottom: 30px;
+}
+.employee .employee-name {
+  margin-top: 0;
+}
+.employee .employee-name b {
+  margin-bottom: 10px;
 }
