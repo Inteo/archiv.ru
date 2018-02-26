@@ -3761,7 +3761,8 @@ a:hover .icon-confirm,
 }
 .team .scene__content {
   height: auto;
-  padding-top: 60px;
+  min-height: auto;
+  padding-top: 80px;
   padding-bottom: 60px;
 }
 .team .breadcrumbs {
