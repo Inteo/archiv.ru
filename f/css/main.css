@@ -1688,6 +1688,16 @@ a:hover .sub-menu-toggle svg path {
     background-size: 2758px 172px;
   }
 }
+.icon-area {
+  width: 24px;
+  height: 24px;
+  background-position: -1480px -19px;
+}
+.icon-capacity {
+  width: 24px;
+  height: 22px;
+  background-position: -1480px -50px;
+}
 .icon-quot {
   width: 24px;
   height: 20px;
@@ -3386,6 +3396,56 @@ a:hover .icon-confirm,
 .photo-slider__navigation .btn {
   margin-right: 20px;
 }
+.option .photo-slider {
+  margin: 30px -40px 0;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .option .photo-slider {
+    margin-top: 0;
+  }
+}
+.option .btn {
+  white-space: normal;
+}
+.option .photo-slider__container {
+  padding: 0;
+}
+.option .option__content-holder {
+  border: none;
+  padding: 55px 30px 60px;
+}
+@media (min-width: 567px) {
+  .option .option__content-holder {
+    padding: 55px 55px 60px;
+  }
+}
+.option .icon-sign {
+  display: none;
+}
+@media (min-width: 768px) {
+  .option .icon-sign {
+    display: inline-block;
+  }
+}
+.option .photo-slider__img {
+  margin-bottom: 0;
+}
+.option .photo-slider__navigation {
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 50px;
+  left: 0;
+  text-align: left;
+}
+.option .photo-slider__navigation .btn {
+  margin-left: 40px;
+}
+.option .photo-slider__navigation .btn:last-of-type {
+  float: right;
+  margin-right: 40px;
+}
 .options-container {
   background: #f5f5f5;
   padding: 100px 0;
@@ -3504,6 +3564,23 @@ a:hover .icon-confirm,
 }
 .option__content .list-styled {
   margin-bottom: 40px;
+}
+.option__detail {
+  padding-left: 0;
+  list-style: none;
+}
+.option__detail li {
+  margin-bottom: 50px;
+
+}
+.option__detail li i {
+  margin-bottom: 10px;
+}
+.option__detail li b {
+  color: #e22c49;
+}
+.option__detail li sup {
+  font-size: 10px;
 }
 .storage {
   padding: 100px 0;

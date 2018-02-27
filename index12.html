@@ -252,7 +252,7 @@
       <p></p>
       <div class="photo-slider">
         <div class="container">
-          <div class="photo-slider__content">
+          <div class="photo-slider__content" id="photoSlider">
             <div class="photo-slider__item">
               <div class="photo-slider__zoom"><i class="icon-zoom"></i></div>
               <div class="photo-slider__img" style="background-image: url(f/i/photo-slide3.jpg)"></div>
@@ -299,7 +299,7 @@
           <div class="photo-slider__navigation">
             <div class="row">
               <div class="col-md-4 offset-lg-1">
-                <div class="photo-slider__navigation-holder"></div>
+                <div class="photo-slider__navigation-holder" id="photoSlider-nav"></div>
               </div>
             </div>
           </div>
@@ -307,10 +307,10 @@
       </div>
       <script>
         $(document).ready(function(){
-          $('.photo-slider__content').slick({
+          $('#photoSlider').slick({
             'prevArrow': '<button type="button" class="btn btn-round"><i class="icon-arr icon-arr_back"></i></button>',
             'nextArrow': '<button type="button" class="btn btn-round"><i class="icon-arr"></i></button>',
-            'appendArrows': $('.photo-slider__navigation-holder'),
+            'appendArrows': $('#photoSlider-nav'),
             'fade': true
           });
         });
@@ -448,13 +448,46 @@
                   </div>
                 </div>
                 <div class="option__content collapse" id="scroll-down1">
+                  <div class="photo-slider">
+                    <div class="photo-slider__content" id="optionSlider">
+                      <div class="photo-slider__item">
+                        <div class="photo-slider__img" style="background-image: url(f/i/photo-slide7.jpg)"></div>
+                      </div>
+                      <div class="photo-slider__item">
+                        <div class="photo-slider__img" style="background-image: url(f/i/photo-slide7.jpg)"></div>
+                      </div>
+                      <div class="photo-slider__item">
+                        <div class="photo-slider__img" style="background-image: url(f/i/photo-slide7.jpg)"></div>
+                      </div>
+                    </div>
+                    <div class="photo-slider__navigation">
+                      <div class="photo-slider__navigation-holder" id="optionSlider-nav"></div>
+                    </div>
+                  </div>
                   <div class="option__content-holder">
-                    <ul class="list-styled">
-                      <li>Размещение в офисе клиента опломбированного контейнера для сбора документов</li>
-                      <li>Вывоз и уничтожение содержимого контейнеров по мере его наполнения или по согласованному графику</li>
-                      <li>Предоставление акта конфиденциального уничтожения</li>
-                    </ul>
-                    <a href="#" class="btn">Подробнее <i class="icon-arr"></i></a>
+                    <div class="row">
+                      <div class="col-md-8">
+                        <ul class="list-styled">
+                          <li>Новое современное архивохранилище класса «А»</li>
+                          <li>Оборудовано современными системами видеонаблюдения и пожаротушения</li>
+                          <li>Охрана объекта 24/7</li>
+                          <li>Современные аудит-комнаты для работы с документами</li>
+                        </ul>
+                      </div>
+                      <div class="col-md-3 offset-md-1">
+                        <ul class="option__detail">
+                          <li>
+                            <i class="icon-area"></i>
+                            <p>Площадь <b>4&nbsp;800</b> м<sup>2</sup></p>
+                          </li>
+                          <li>
+                            <i class="icon-capacity"></i>
+                            <p>Вместимость <br> <b>450&nbsp;000</b> коробов</p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="btn"><i class="icon-sign"></i> Записаться на экскурсию</a>
                   </div>
                 </div>
               </div>
@@ -532,6 +565,16 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function(){
+          $('#optionSlider').slick({
+            'prevArrow': '<button type="button" class="btn btn-round"><i class="icon-arr icon-arr_back"></i></button>',
+            'nextArrow': '<button type="button" class="btn btn-round"><i class="icon-arr"></i></button>',
+            'appendArrows': $('#optionSlider-nav'),
+            'fade': true
+          });
+        });
+      </script>
       <div class="contacts">
         <div class="contacts__map" style="background: url(f/i/map.jpg)"></div>
       </div>
