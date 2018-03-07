@@ -1688,6 +1688,18 @@ a:hover .sub-menu-toggle svg path {
     background-size: 2758px 172px;
   }
 }
+.icon-plus {
+  width: 14px;
+  height: 14px;
+  background-position: -1192px -78px;
+  margin-top: -2px;
+}
+.btn .icon-plus {
+  margin-right: 20px;
+}
+.btn:hover .icon-plus {
+  background-position: -1210px -78px;
+}
 .icon-area {
   width: 24px;
   height: 24px;
@@ -2037,6 +2049,11 @@ a:hover .icon-confirm,
   width: 97px;
   height: 97px;
   background-position: -1003px 0;
+}
+.icon-calculator3 {
+  width: 67px;
+  height: 66px;
+  background-position: -2556px -78px;
 }
 .icon-calc {
   width: 16px;
@@ -3412,7 +3429,7 @@ a:hover .icon-confirm,
   padding: 0;
 }
 .option .option__content-holder {
-  border: none;
+  //border: none;
   padding: 55px 30px 60px;
 }
 @media (min-width: 567px) {
@@ -3929,4 +3946,207 @@ a:hover .icon-confirm,
 }
 .employee .employee-name b {
   margin-bottom: 10px;
+}
+.news {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.news li {
+  margin-bottom: 60px;
+}
+.news__date {
+  color: #e22c49;
+  margin-bottom: 10px;
+}
+.news__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.subsribe {
+  border: 2px solid #eee;
+  padding: 50px 0;
+  margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .subsribe {
+    background: url(../../f/i/environment2.png) center calc(100% - 60px) no-repeat;
+  }
+}
+.subsribe__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.subsribe .subscribe-form {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.subsribe .subscribe-form__field {
+  margin-bottom: 35px;
+}
+.news-btn {
+  margin-bottom: 120px;
+}
+.calc {
+  margin-bottom: 100px;
+}
+.calc__btns {
+  padding-top: 20px;
+  margin-bottom: -20px;
+}
+.calc__btns-item {
+  margin-bottom: 20px;
+}
+.calc__btns .btn {
+  width: 195px;
+}
+.calc__caption i {
+  color: #e22c49;
+}
+.calc__fromto {
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .calc__fromto_first {
+    margin-right: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .calc__fromto {
+    margin-bottom: 0;
+  }
+}
+.calc__fromto-item {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+}
+.calc__fromto .calc__fromto-item:first-of-type {
+  width: 30px;
+  line-height: 54px;
+}
+.calc__fromto .calc__fromto-item:last-of-type {
+  width: calc(100% - 30px);
+}
+.custom-select {
+
+}
+.dropup,
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+
+}
+
+.dropup .dropdown-toggle::after {
+  border-top: 0;
+  border-bottom: 0.3em solid;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #292b2c;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-divider {
+  height: 1px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  background-color: #eceeef;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 3px 1.5rem;
+  clear: both;
+  font-weight: normal;
+  color: #292b2c;
+  text-align: inherit;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #1d1e1f;
+  text-decoration: none;
+  background-color: #f7f7f9;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0275d8;
+}
+
+.dropdown-item.disabled, .dropdown-item:disabled {
+  color: #636c72;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+.show > .dropdown-menu {
+  display: block;
+}
+
+.show > a {
+  outline: 0;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.dropdown-menu-left {
+  right: auto;
+  left: 0;
+}
+
+.dropdown-header {
+  display: block;
+  padding: 0.5rem 1.5rem;
+  margin-bottom: 0;
+  font-size: 0.875rem;
+  color: #636c72;
+  white-space: nowrap;
+}
+
+.dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990;
+}
+
+.dropup .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 0.125rem;
 }
