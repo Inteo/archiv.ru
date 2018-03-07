@@ -998,7 +998,23 @@ function onloadRecaptcha() {
 		});
 	}
 }
-
+$(function() {
+	$(".modal-inline").fancybox({
+		type: 'inline',
+		fixed: false,
+		width: '100%',
+		height: "auto",
+		maxWidth: 945,
+		autoSize: false,
+		helpers: {
+			overlay: {
+				css: {
+					'background': 'rgba(0, 0, 0, 0.4)'
+				}
+			}
+		}
+	});
+});
 $(document).ready(function() {
 	inteoJSCore.init();
 	/*

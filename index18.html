@@ -7,12 +7,15 @@
     <link href="f/css/bootstrap-grid.min.css" type="text/css" rel="stylesheet">
     <link href="f/slick/slick.css" type="text/css" rel="stylesheet">
     <link href="f/css/bootstrap-select.css" type="text/css" rel="stylesheet">
+    <link href="f/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet">
     <link href="f/css/main.css" type="text/css" rel="stylesheet">
     <script src="f/js/jquery-3.2.1.min.js"></script>
     <script src="f/js/bootstrap-select.min.js"></script>
     <script src="f/js/popper.min.js"></script>
     <script src="f/js/bootstrap.js"></script>
     <script src="f/slick/slick.min.js"></script>
+    <script src="f/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="f/js/common.js"></script>
     <title>Архив</title>
   </head>
   <body class="loading">
@@ -235,7 +238,7 @@
           </div>
         </div>
         <div class="row option calc">
-          <div class="col-12 col-sm-10 offset-sm-1">
+          <div class="col-12 col-lg-10 offset-lg-1">
             <div class="option__item">
               <div class="option__btn collapsed row align-items-center" data-toggle="collapse" data-target="#scroll-down1" aria-expanded="false" aria-controls="scroll-down1">
                 <div class="col-md-2">
@@ -298,7 +301,6 @@
                           <option>Вид деятельности 2</option>
                           <option>Вид деятельности 3</option>
                         </select>
-
                       </div>
                     </div>
                     <div class="form-control row align-items-center">
@@ -361,7 +363,7 @@
                     </div>
                     <div class="row align-items-center calc__btns justify-content-center justify-content-md-start">
                       <div class="col-auto calc__btns-item">
-                        <button class="btn">Рассчитать</button>
+                        <a href="#calc-popup" class="btn modal-inline">Рассчитать</a>
                       </div>
                       <div class="col-auto calc__btns-item">
                         <button class="btn btn-bordered">Сбросить</button>
@@ -573,5 +575,110 @@
       });
     </script>
     <div class="body__progress-line"><div class="body__progress"></div></div>
+    <div class="popups">
+      <div class="popup calc-popup" id="calc-popup">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="popup__title">Ваш расчет</div>
+            <form action="">
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Период обработки
+                  </div>
+                  <div class="col-sm-8">
+                    <b>2010–2018 года</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Усредненная годовая численность всех работников организации
+                  </div>
+                  <div class="col-sm-8">
+                    <b>59 человек</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Процент текучки кадров
+                  </div>
+                  <div class="col-sm-8">
+                    <b>5%</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Примерное количество дел, образуемых в организации за заданный период
+                  </div>
+                  <div class="col-sm-2">
+                    <b>126 шт. </b>
+                  </div>
+                  <div class="col-sm-6">
+                    (14 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Количество дел по личному составу (срок хранения 75 лет)
+                  </div>
+                  <div class="col-sm-2">
+                    <b>72 шт.</b>
+                  </div>
+                  <div class="col-sm-6">
+                    (8 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Количество дел постоянного хранения
+                  </div>
+                  <div class="col-sm-2">
+                    <b>54 шт.</b>
+                  </div>
+                  <div class="col-sm-6">
+                    (6 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Примерные временные затраты на комплексную обработку документов с учетом переплета
+                  </div>
+                  <div class="col-sm-8">
+                    <b>51 чел./ день</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__send">
+                <div class="row align-items-center">
+                  <div class="col-md-4 calc-popup__send-item">
+                    Получить расчет на почту
+                  </div>
+                  <div class="col-md-4 calc-popup__send-item">
+                    <input type="text" class="input" placeholder="Введите свой E-mail">
+                  </div>
+                  <div class="col-md-4 calc-popup__send-item">
+                    <button class="btn">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </body>
 </html>

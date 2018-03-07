@@ -34,6 +34,47 @@ a:hover {
 *:focus,*:active {
   outline: none;
 }
+.popups {
+  position: absolute;
+  left: -9999px;
+  top: -9999px;
+}
+.fancybox-wrap {
+  border: 2px solid #eee;
+}
+.fancybox-inner {
+  overflow-x: hidden !important;
+}
+.popup {
+  padding: 50px 0;
+  color: #000;
+}
+.popup__title {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 40px;
+}
+.popup-calc {
+
+}
+.calc-popup__item {
+  border-bottom: 2px solid #eee;
+  padding: 20px 0;
+}
+.calc-popup__send {
+  padding: 20px 0;
+  margin-bottom: -20px;
+}
+.calc-popup__send-item {
+  margin-bottom: 20px;
+}
+.calc-popup__send .btn {
+  width: 100%;
+}
+.calc-popup__item:first-of-type {
+  border-top: 2px solid #eee;
+}
 .btn {
   display: inline-block;
   text-align: center;
