@@ -1729,6 +1729,11 @@ a:hover .sub-menu-toggle svg path {
     background-size: 2758px 172px;
   }
 }
+.icon-values {
+  width: 67px;
+  height: 67px;
+  background-position: -2628px -77px;
+}
 .icon-plus {
   width: 14px;
   height: 14px;
@@ -3473,7 +3478,7 @@ a:hover .icon-confirm,
   //border: none;
   padding: 55px 30px 60px;
 }
-@media (min-width: 567px) {
+@media (min-width: 992px) {
   .option .option__content-holder {
     padding: 55px 55px 60px;
   }
@@ -4034,6 +4039,15 @@ a:hover .icon-confirm,
 }
 .calc {
   margin-bottom: 100px;
+}
+.calc__size {
+  margin-bottom: 10px;
+}
+.calc__size label {
+  padding-top: 11px;
+}
+.calc__size .row .row {
+  margin-bottom: 20px;
 }
 .calc__btns {
   padding-top: 20px;

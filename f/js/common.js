@@ -1002,6 +1002,7 @@ $(function() {
 	$(".modal-inline").fancybox({
 		type: 'inline',
 		fixed: false,
+		fitToView: false,
 		width: '100%',
 		height: "auto",
 		maxWidth: 945,

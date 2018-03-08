@@ -218,8 +218,8 @@
           <div class="col-12 col-sm-11 col-md-10 offset-sm-1">
             <ul class="breadcrumbs">
               <li><a href="/">Главная</a><i>»</i>
-              </li> <li><a href="#">О компании</a><i>»</i>
-              </li><li><span>Калькулятор архивной обработки</span></li>
+              </li> <li><a href="#">Калькуляторы</a><i>»</i>
+              </li><li><span>Калькулятор величин</span></li>
             </ul>
           </div>
         </div>
@@ -228,12 +228,13 @@
             <i class="icon-addition subtitle__ico"></i>
           </div>
           <div class="col-12 col-sm-11 col-md-10">
-            <h2 class="subtitle__main">Калькулятор архивной обработки</h2>
+            <h2 class="subtitle__main">Калькулятор величин</h2>
             <p style="margin-bottom: 50px;">С помощью данного калькулятора вы сможете рассчитать объем документов и определить:</p>
             <ul class="list-styled" style="margin-bottom: 60px;">
-              <li>Количество дел к обработке</li>
-              <li>Определить нормы выработки данных специалистов (чел/дней)</li>
-              <li>Сформировать подробный лист задания для архивных специалистов</li>
+              <li>Длину полок в погонных метрах для планирования стеллажного пространства архива</li>
+              <li>Количество архивных коробов, которое потребуется для хранения ваших документов</li>
+              <li>Объем и вес документов для планирования транспортировки архива</li>
+              <li>Вес документов на уничтожение</li>
             </ul>
           </div>
         </div>
@@ -243,11 +244,11 @@
               <div class="option__btn collapsed row align-items-center" data-toggle="collapse" data-target="#scroll-down1" aria-expanded="false" aria-controls="scroll-down1">
                 <div class="col-md-2">
                   <div class="option__ico">
-                    <i class="icon-calculator3"></i>
+                    <i class="icon-values"></i>
                   </div>
                 </div>
                 <div class="col-md-8">
-                  <div class="option__name">Рассчитать архивную обработку</div>
+                  <div class="option__name">Рассчитать архивные величины</div>
                 </div>
                 <div class="col-md-2 option__arr">
                   <div class="btn btn-bordered btn-round">
@@ -260,23 +261,85 @@
                   <form>
                     <div class="form-control row align-items-center">
                       <div class="col-md-4">
-                        <label>Период обработки&nbsp;<i>*</i></label>
+                        <label>Россыпь, м³</label>
                       </div>
                       <div class="col-md-8">
-                        <div class="row no-gutters">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row align-items-center">
+                      <div class="col-md-4">
+                        <label>Вес документов, кг</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row align-items-center">
+                      <div class="col-md-4">
+                        <label>Длина полок, на которых хранятся документы, м</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row align-items-center">
+                      <div class="col-md-4">
+                        <label>Папки «Корона», шт.</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row align-items-center">
+                      <div class="col-md-4">
+                        <label>Длина корешка папки, cм</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row align-items-center">
+                      <div class="col-md-4">
+                        <label>Архивный короб, шт.</label>
+                      </div>
+                      <div class="col-md-8">
+                        <input type="text" class="input">
+                      </div>
+                    </div>
+                    <div class="form-control row calc__size">
+                      <div class="col-md-4">
+                        <label>Внутренние размеры короба, см</label>
+                      </div>
+                      <div class="col-md-8">
+                        <div class="row">
                           <div class="col-md-6">
-                            <div class="calc__fromto calc__fromto_first">
-                              <div class="calc__fromto-item">с
-                              </div><div class="calc__fromto-item">
-                                <input type="text" class="input" placeholder="Год">
+                            <div class="row align-items-center">
+                              <div class="col-md-4">
+                                Длина
+                              </div>
+                              <div class="col-md-8">
+                                <input type="text" class="input" value="31,5">
                               </div>
                             </div>
                           </div>
                           <div class="col-md-6">
-                            <div class="calc__fromto">
-                              <div class="calc__fromto-item">по
-                              </div><div class="calc__fromto-item">
-                                <input type="text" class="input" placeholder="Год">
+                            <div class="row align-items-center">
+                              <div class="col-md-4">
+                                Ширина
+                              </div>
+                              <div class="col-md-8">
+                                <input type="text" class="input" value="39,5">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6">
+                            <div class="row align-items-center">
+                              <div class="col-md-4">
+                                Высота
+                              </div>
+                              <div class="col-md-8">
+                                <input type="text" class="input" value="27,5">
                               </div>
                             </div>
                           </div>
@@ -285,80 +348,10 @@
                     </div>
                     <div class="form-control row align-items-center">
                       <div class="col-md-4">
-                        <label>Усредненная годовая численность всех работников организации&nbsp;<i>*</i></label>
+                        <label>Получить расчет на почту</label>
                       </div>
                       <div class="col-md-8">
-                        <input type="text" class="input" placeholder="Введите количество человек">
-                      </div>
-                    </div>
-                    <div class="form-control row align-items-center">
-                      <div class="col-md-4">
-                        <label>Вид деятельности организации&nbsp;<i>*</i></label>
-                      </div>
-                      <div class="col-md-8">
-                        <select class="selectpicker" title="Выбрать">
-                          <option>Вид деятельности 1</option>
-                          <option>Вид деятельности 2</option>
-                          <option>Вид деятельности 3</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-control row align-items-center">
-                      <div class="col-md-4">
-                        <label>Государственное предприятие&nbsp;<i>*</i></label>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="row no-gutters justify-content-center justify-content-md-start">
-                          <div class="col-auto" style="padding: 0 20px 0 0">
-                            <div class="radio">
-                              <input type="radio" name="gp" id="gp1" checked>
-                              <label for="gp1">Да</label>
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <div class="radio">
-                              <input type="radio" name="gp" id="gp2">
-                              <label for="gp2">Нет</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-control row align-items-center">
-                      <div class="col-md-4">
-                        <label>Процент текучки кадров&nbsp;<i>*</i></label>
-                      </div>
-                      <div class="col-md-8">
-                        <input type="text" class="input" placeholder="Введите проценты">
-                      </div>
-                    </div>
-                    <div class="form-control row align-items-center">
-                      <div class="col-md-4">
-                        <label>Наличие вредности на производстве&nbsp;<i>*</i></label>
-                      </div>
-                      <div class="col-md-8">
-                        <div class="row no-gutters justify-content-center justify-content-md-start">
-                          <div class="col-auto" style="padding: 0 20px 0 0">
-                            <div class="radio">
-                              <input type="radio" name="vp" id="vp1" checked>
-                              <label for="vp1">Да</label>
-                            </div>
-                          </div>
-                          <div class="col-auto">
-                            <div class="radio">
-                              <input type="radio" name="vp" id="vp2">
-                              <label for="vp2">Нет</label>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-control row align-items-center">
-                      <div class="col-md-4">
-                        <label>Договоры подряда с физ. лицами, среднее количество в год&nbsp;<i>*</i></label>
-                      </div>
-                      <div class="col-md-8">
-                        <input type="text" class="input" placeholder="Введите количество штук">
+                        <input type="text" class="input" placeholder="Введите свой E-mail">
                       </div>
                     </div>
                     <div class="row align-items-center calc__btns justify-content-center justify-content-md-start">
@@ -368,11 +361,7 @@
                       <div class="col-auto calc__btns-item">
                         <button class="btn btn-bordered">Сбросить</button>
                       </div>
-                      <div class="col-auto calc__caption calc__btns-item">
-                        <i>*</i> — обязательные поля
-                      </div>
                     </div>
-
                   </form>
                 </div>
               </div>
@@ -676,6 +665,8 @@
             </form>
           </div>
         </div>
+
+
       </div>
     </div>
   </body>
