@@ -1,0 +1,597 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="f/css/bootstrap-reboot.min.css" type="text/css" rel="stylesheet">
+    <link href="f/css/bootstrap-grid.min.css" type="text/css" rel="stylesheet">
+    <link href="f/slick/slick.css" type="text/css" rel="stylesheet">
+    <link href="f/css/bootstrap-select.css" type="text/css" rel="stylesheet">
+    <link href="f/fancybox/jquery.fancybox.css" type="text/css" rel="stylesheet">
+    <link href="f/css/main.css" type="text/css" rel="stylesheet">
+    <script src="f/js/jquery-3.2.1.min.js"></script>
+    <script src="f/js/bootstrap-select.min.js"></script>
+    <script src="f/js/popper.min.js"></script>
+    <script src="f/js/bootstrap.js"></script>
+    <script src="f/slick/slick.min.js"></script>
+    <script src="f/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="f/js/common.js"></script>
+    <title>Архив</title>
+  </head>
+  <body class="loading">
+    <div id="wrapper">
+      <div class="mobile-holder"></div>
+      <!--<nav class="navbar clearfix">
+        <div class="navbar__holder wrap">
+          <div class="navbar__search">
+            <form class="search" action="#" method="get">
+              <div class="search__wrap">
+                <input class="search__input" id="rd-search-form-input" type="text" name="q" placeholder="Поиск">
+              </div>
+              <button class="search__submit" type="submit">
+                <i class="icon-search"></i>
+              </button>
+            </form>
+          </div>
+          <div class="navbar__menu">
+            <ul class="nav navbar-nav navbar_header" id="main-menu">
+              <li class="menu-item menu-item-has-children" id="menu-item-1">
+                <a href="#" class="root-item">
+                  О компании
+                                    
+                  <span class="sub-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                      <path d="M1,1L4,4,7,1"/>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item" id="menu-item-2"><a href="#">Наши клиенты</a></li>
+                  <li class="menu-item" id="menu-item-3"><a href="#">О хранилище</a></li>
+                  <li class="menu-item" id="menu-item-4"><a href="#">Сертификаты и лицензии</a></li>
+                  <li class="menu-item" id="menu-item-5"><a href="#">Наша команда</a></li>
+                  <li class="menu-item" id="menu-item-6"><a href="#">Новости</a></li>
+                  <li class="menu-item" id="menu-item-7"><a href="#">Карьера</a></li>
+                  <li class="menu-item" id="menu-item-8"><a href="#">Наши центры</a></li>
+                </ul>
+              </li>
+              <li class="menu-item" id="menu-item-9">
+                <a href="#" class="root-item">Выполненные проекты</a>
+              </li>
+              <li class="menu-item" id="menu-item-10">
+                <a href="#" class="root-item">Справочник</a>
+              </li>
+              <li class="menu-item menu-item-has-children" id="menu-item-11">
+                <a href="#" class="root-item">
+                  Калькуляторы
+                                    
+                  <span class="sub-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                      <path d="M1,1L4,4,7,1"/>
+                    </svg>
+                  </span>
+                </a>
+                <ul class="sub-menu">
+                  <li class="menu-item" id="menu-item-12"><a href="#">Калькулятор архивной обработки</a></li>
+                  <li class="menu-item" id="menu-item-13"><a href="#">Калькулятор архивных величин</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar__user">
+            <div class="user">
+              <div class="user__item">
+                <a href="#">
+                  <i class="icon-user"></i>
+                  Личный кабинет
+                                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>-->
+      <!--<header class="header header-container clearfix">
+        <div class="header__holder wrap">
+          <div class="header__mobile">
+            <button class="main-menu-toggle menu-toggle" aria-controls="main-menu" aria-expanded="false">
+              <span class="menu-toggle__box">
+                <span class="menu-toggle__inner"></span>
+              </span>
+            </button>
+          </div>
+          <div class="header__logo">
+            <div class="logo">
+              <a href="/">
+                <img src="f/i/logo.png" srcset="f/i/logo2x.png 2x" alt="Делис Архив" width="226" height="60">
+              </a>
+            </div>
+          </div>
+          <div class="header__menu">
+            <ul class="nav navbar-nav navbar_header" id="main-menu2">
+              <li id="menu-item-1" class="menu-item menu-item-has-children">
+                <a href="#" class="root-item">
+                  Все услуги
+                                    
+                  <span class="sub-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                      <path d="M1,1L4,4,7,1"/>
+                    </svg>
+                  </span>
+                </a>
+                <div class="sub-menu sub-menu_wide">
+                  <div class="container">
+                    <div class="row no-gutters sub-menu__holder">
+                      <div class="col-md-10 offset-md-1">
+                        <ol class="row">
+                          <li class="col-md-3"><a href="#">Хранение документов</a></li>
+                          <li class="col-md-3"><a href="#">Архивная обработка</a></li>
+                          <li class="col-md-3"><a href="#">Уничтожение документов</a></li>
+                          <li class="col-md-3"><a href="#">Переплет документов</a></li>
+                          <li class="col-md-3"><a href="#">Сканирование документов</a></li>
+                          <li class="col-md-3"><a href="#">Оптимизация документооборота</a></li>
+                          <li class="col-md-3"><a href="#">Обслуживание документов</a></li>
+                          <li class="col-md-3"><a href="#">Электронный архив</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="menu-item-10" class="menu-item menu-item-has-children">
+                <a href="#" class="root-item">
+                  Решения для отраслей
+                                    
+                  <span class="sub-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                      <path d="M1,1L4,4,7,1"/>
+                    </svg>
+                  </span>
+                </a>
+                <div class="sub-menu sub-menu_wide">
+                  <div class="container">
+                    <div class="row no-gutters sub-menu__holder">
+                      <div class="col-md-10 offset-md-1">
+                        <ol class="row">
+                          <li class="col-md-3"><a href="#">Финансовые компании и банки</a></li>
+                          <li class="col-md-3"><a href="#">Страховые компании</a></li>
+                          <li class="col-md-3"><a href="#">Торговые компании</a></li>
+                          <li class="col-md-3"><a href="#">Нефтегазовые компании</a></li>
+                          <li class="col-md-3"><a href="#">Медицинские учреждения</a></li>
+                          <li class="col-md-3"><a href="#">Государственный сектор</a></li>
+                          <li class="col-md-3"><a href="#">Автомобильная индустрия</a></li>
+                          <li class="col-md-3"><a href="#">Сфера услуг</a></li>
+                          <li class="col-md-3"><a href="#">Промышленность и производство</a></li>
+                          <li class="col-md-3"><a href="#">Культура и СМИ</a></li>
+                          <li class="col-md-3"><a href="#">Юридические компании</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="menu-item-20" class="menu-item menu-item-has-children">
+                <a href="#" class="root-item">
+                  Персональные сервисы
+                                    
+                  <span class="sub-menu-toggle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+                      <path d="M1,1L4,4,7,1"/>
+                    </svg>
+                  </span>
+                </a>
+                <div class="sub-menu sub-menu_wide">
+                  <div class="container">
+                    <div class="row no-gutters sub-menu__holder">
+                      <div class="col-md-10 offset-md-1">
+                        <ol class="row">
+                          <li class="col-md-3"><a href="#">Генеральному директору</a></li>
+                          <li class="col-md-3"><a href="#">Бухгалтеру и финансисту</a></li>
+                          <li class="col-md-3"><a href="#">Юристу</a></li>
+                          <li class="col-md-3"><a href="#">Административному директору</a></li>
+                          <li class="col-md-3"><a href="#">Архивисту и делопроизводителю</a></li>
+                          <li class="col-md-3"><a href="#">Техническому специалисту</a></li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li id="menu-item-37" class="menu-item">
+                <a href="#" class="root-item">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__contacts">
+            <div class="phones">
+              <div class="phones__item">
+                <span class="phones__number">
+                  <a href="tel:88007078700"><i class="icon-phone"></i> 8 800 707 87 00</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>-->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-11 col-md-10 offset-sm-1">
+            <ul class="breadcrumbs">
+              <li><a href="/">Главная</a><i>»</i>
+              </li><li><a href="#">О компании</a><i>»</i>
+              </li><li><a href="#">Реализованные проекты</a><i>»</i>
+              </li><li><span>Ренессанс Капитал Банк</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row subtitle">
+          <div class="col-sm-1">
+            <i class="icon-logo subtitle__ico"></i>
+          </div>
+          <div class="col-12 col-sm-11 col-md-10">
+            <h2 class="subtitle__main">Ренессанс Капитал Банк</h2>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-card__main">
+            <div class="row">
+              <div class="col-10 offset-1">
+                <div class="row no-gutters">
+                  <div class="col-md-6">
+                    <div class="project-card__logo">
+                      <img src="f/i/projects12.png" alt="">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="project-card__description">
+                      <b>Задача</b>
+                      <p>Перестроение работы отдела, занимающегося приемом и регистрацией кредитных договоров.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-11 col-md-10 offset-sm-1">
+              <h3 class="project-card__subtitle">Исходные данные</h3>
+              <div class="project-card__text">
+                <p>Изначально все документы в банке собирались в одной точке — в центре по обработке документов. Документы просматривались экспертами: они выявляли ошибки при оформлении документов и в случае их обнаружения, откладывали досье в сторону, списывались с менеджерами, которые допустили эти ошибки и ждали исправленные документы. При поступлении исправленных документов эксперты укомплектовывали досье и отправляли его на хранение, при этом учёт пришедших  досье они вели в excel.</p>
+              </div>
+              <h3 class="project-card__subtitle">Решение</h3>
+              <div class="project-card__text">
+                <p>Внедрение электронной системы учета движения, фиксации досье, его на хранение, при этом учёт пришедших досье они вели в excel.</p>
+                <p>Мы настроили синхронизацию с основной банковской фронтальной системой, откуда мы брали информацию, о том, что досье должно поступить в архив, и настроили быстрый интерфейс.</p>
+                <p>Сейчас при поступлении досье, оператор считывает с него штрихкод или вводит номер договора (если штрих-код отсутствует), после чего сразу попадает в карточку досье, где оператору в виде галочек выводится список ошибок, которые возможны в конкретном досье, в зависимости от условий выдачи кредита. Просмотрев досье и проставив соответствующие галочки, оператор закрывает карточку. При этом система сразу фиксирует, в какой короб и в какую группировку упаковал данное досье оператор.</p>
+              </div>
+              <div class="project-card__table">
+                <h3 class="project-card__subtitle">Результат</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>До обращения</th>
+                      <th>После обращения</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Время на обработку 1 досье</td>
+                      <td data-label="До обращения">5,5 минут</td>
+                      <td data-label="После обращения">45 секунд</td>
+                    </tr>
+                    <tr>
+                      <td>Количество человек обрабатывающего центра</td>
+                      <td data-label="До обращения">40 человек</td>
+                      <td data-label="После обращения">8 человек</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <p>Такая эффективность была достигнута благодаря автоматизации обработки ошибок и изменения самого процесса обработки документов.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="question question_anna">
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="offset-md-4 col-md-5">
+              <blockquote class="quote">
+                <p class="quote__text">Задайте вопрос по услугам и сотрудничеству или просто позвоните нам  <a href="tel:88007078700">8 800 707 87 00</a></p>
+                <footer class="quote__author">Анна Рубанова, менеджер по работе с клиентами</footer>
+              </blockquote>
+            </div>
+            <div class="col-md-3">
+              <div class="question__button">
+                <a href="#" class="btn"><i class="icon-question"></i> Задать вопрос</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-list"></i>
+                <div class="footer-block__title">Наши услуги</div>
+                <ul class="footer-menu__list">
+                  <li><a href="#">Хранение документов</a></li>
+                  <li><a href="#">Архивная обработка</a></li>
+                  <li><a href="#">Электронный архив</a></li>
+                  <li><a href="#">Оптимизация документооборота</a></li>
+                  <li><a href="#">Уничтожение документов</a></li>
+                  <li><a href="#">Переплет документов</a></li>
+                  <li><a href="#">Сканирование документов</a></li>
+                  <li><a href="#">Обслуживание документов</a></li>
+                </ul>
+              </div> 
+            </div>
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-hall"></i>
+                <div class="footer-block__title">Решения для отраслей</div>
+                <ul class="footer-menu__list">
+                  <li><a href="#">Финансовые компании и банки</a></li>
+                  <li><a href="#">Страховые компании</a></li>
+                  <li><a href="#">Торговые компании</a></li>
+                  <li><a href="#">Нефтегазовые компании</a></li>
+                  <li><a href="#">Медицинские учреждения</a></li>
+                  <li><a href="#">Государственный сектор</a></li>
+                  <li><a href="#">Автомобильная индустрия</a></li>
+                  <li><a href="#">Сфера услуг</a></li>
+                  <li><a href="#">Промышленность и производство</a></li>
+                  <li><a href="#">Культура и СМИ</a></li>
+                  <li><a href="#">Юридические компании</a></li>
+                </ul>
+              </div> 
+            </div>
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-person"></i>
+                <div class="footer-block__title">Персональные сервисы</div>
+                <ul class="footer-menu__list">
+                  <li><a href="#">Генеральному директору</a></li>
+                  <li><a href="#">Бухгалтеру и финансисту</a></li>
+                  <li><a href="#">Юристу</a></li>
+                  <li><a href="#">Административному директору</a></li>
+                  <li><a href="#">Архивисту и делопроизводителю</a></li>
+                  <li><a href="#">Техническому специалисту</a></li>
+                </ul>
+              </div> 
+            </div>
+          </div> 
+        </div>      
+      </div>
+      <div class="footer-extra-menu">
+        <div class="collapse" id="extraMenu">
+          <div class="footer-extra-menu__holder">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="footer-block">
+                    <i class="icon-logo"></i>
+                    <div class="footer-block__title">О компании</div>
+                    <ul class="footer-menu__list">
+                      <li><a href="#">Наши клиенты</a></li>
+                      <li><a href="#">О хранилище</a></li>
+                      <li><a href="#">Выполненные проекты</a></li>
+                      <li><a href="#">Сертификаты и лицензии</a></li>
+                      <li><a href="#">Наша команда</a></li>
+                      <li><a href="#">Новости</a></li>
+                      <li><a href="#">Карьера</a></li>
+                      <li><a href="#">Наши центры</a></li>
+                    </ul>
+                  </div> 
+                </div>
+                <div class="col-md-4">
+                  <div class="footer-block">
+                    <i class="icon-addition"></i>
+                    <div class="footer-block__title">Полезное для вас</div>
+                    <ul class="footer-menu__list">
+                      <li><a href="#">Справочник</a></li>
+                      <li><a href="#">Ответы на популярные вопросы</a></li>
+                      <li><a href="#">Сроки хранения документов</a></li>
+                      <li><a href="#">Калькулятор архивной обработки</a></li>
+                      <li><a href="#">Калькулятор архивных величин</a></li>
+                    </ul>
+                  </div> 
+                </div>
+                <div class="col-md-4">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-extra-menu__opener">
+          <button class="btn btn-lite" type="button" data-toggle="collapse" data-target="#extraMenu" aria-expanded="false" aria-controls="extraMenu"><span class="button-toggle"><span class="button-toggle__box"><span class="button-toggle__inner"></span></span></span> Весь сайт</button>
+        </div>
+      </div>
+      <div class="footer-contacts">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-location"></i>
+                <div class="footer-block__title">Контакты</div>
+                <address class="contacts-address">
+                  <span class="contacts-address__title">Офис в Москве</span>
+                  ул. Электрозаводская, д. 21, корп. 41<br>
+                  <a href="tel:+74955140164">(495) 514-01-64</a><br>
+                  <a href="mailto:info@archiv.ru">info@archiv.ru</a>
+                </address>
+                <address class="contacts-address">
+                  <span class="contacts-address__title">Офис в Санкт-Петербурге</span>
+                  ул.Касимовская, д. 5, лит.Б <br>
+                <a href="tel:+78124481332">(812) 448-13-32</a><br>
+                  <a href="mailto:office@delisneva.ru">office@delisneva.ru</a>
+                </address>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-subscribe"></i>
+                <div class="footer-block__title">Будьте в курсе событий</div>
+                <p>Оформите подписку и получайте актуальную информацию по услугам и новым проектам</p>
+                <form class="subscribe-form">
+                  <div class="subscribe-form__field"><input type="email" name="email" placeholder="Ваша почта"><button type="submit" class="btn btn-round btn-lite"><i class="icon-confirm"></i></button></div>
+                  <div class="subscribe-form__agreement">Нажимая на кнопку, вы соглашаетесь с условиями <a href="#">пользовательского соглашения</a> по обработке персональных данных</div>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-block">
+                <i class="icon-poll"></i>
+                <div class="footer-block__title">Оцените новый дизайн</div>
+                <p>Как вы оцениваете новый дизайн сайта? Удобно ли им пользоваться, легко ли найти нужную информацию?</p>
+                <form class="poll-form">
+                  <div class="radio"><input type="radio" name="poll" value="5" id="poll5"><label for="poll5">Очень удобный и информативный</label></div>
+                  <div class="radio"><input type="radio" name="poll" value="4" id="poll4"><label for="poll4">Неплохо, стало немного лучше</label></div>
+                  <div class="radio"><input type="radio" name="poll" value="3" id="poll3"><label for="poll3">Старый сайт мне нравится больше</label></div>
+                  <div class="radio"><input type="radio" name="poll" value="2" id="poll2"><label for="poll2">Все очень плохо</label></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="developer">
+            <!--noindex-->
+              <a href="http://www.inteo-s.ru" rel="external nofollow">Создание сайта <i class="icon-inteo"></i></a>
+            <!--/noindex-->
+          </div>
+          <div class="footer-links">
+            <span class="footer-links__item">© 2017, «Делис Архив». Все права защищены</span>
+            <span class="footer-links__item"><a href="#">Политика конфиденциальности</a></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script>
+      $(document).ready(function() {
+        $('.scene__restart .pseudo').click(function() {
+          var el = $('.scenery')
+            , newone = el.clone(true);
+          el.before(newone);
+          el.remove();
+          return false;
+        });
+      });
+      $(window).on("load", function(e){
+        $('.scenery_first').addClass('animated');
+        $('body').addClass('inited');
+      });
+    </script>
+    <div class="body__progress-line"><div class="body__progress"></div></div>
+    <div class="popups">
+      <div class="popup calc-popup" id="calc-popup">
+        <div class="row">
+          <div class="col-10 offset-1">
+            <div class="popup__title">Ваш расчет</div>
+            <form action="">
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Период обработки
+                  </div>
+                  <div class="col-sm-8">
+                    <b>2010–2018 года</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Усредненная годовая численность всех работников организации
+                  </div>
+                  <div class="col-sm-8">
+                    <b>59 человек</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Процент текучки кадров
+                  </div>
+                  <div class="col-sm-8">
+                    <b>5%</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Примерное количество дел, образуемых в организации за заданный период
+                  </div>
+                  <div class="col-sm-2">
+                    <b>126 шт. </b>
+                  </div>
+                  <div class="col-sm-6">
+                    (14 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Количество дел по личному составу (срок хранения 75 лет)
+                  </div>
+                  <div class="col-sm-2">
+                    <b>72 шт.</b>
+                  </div>
+                  <div class="col-sm-6">
+                    (8 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Количество дел постоянного хранения
+                  </div>
+                  <div class="col-sm-2">
+                    <b>54 шт.</b>
+                  </div>
+                  <div class="col-sm-6">
+                    (6 шт. в год)
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__item">
+                <div class="row">
+                  <div class="col-sm-4">
+                    Примерные временные затраты на комплексную обработку документов с учетом переплета
+                  </div>
+                  <div class="col-sm-8">
+                    <b>51 чел./ день</b>
+                  </div>
+                </div>
+              </div>
+              <div class="calc-popup__send">
+                <div class="row align-items-center">
+                  <div class="col-md-4 calc-popup__send-item">
+                    Получить расчет на почту
+                  </div>
+                  <div class="col-md-4 calc-popup__send-item">
+                    <input type="text" class="input" placeholder="Введите свой E-mail">
+                  </div>
+                  <div class="col-md-4 calc-popup__send-item">
+                    <button class="btn">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
