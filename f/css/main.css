@@ -1791,14 +1791,17 @@ a:hover .sub-menu-toggle svg path {
   background-position: -38px 0;
 }
 
-.icon-user {
+.icon-user,
+.icon-user2 {
   width: 19px;
   height: 19px;
   background-position: 0 0;
   margin-top: -3px;
   margin-right: 11px;
 }
-
+.icon-user2 {
+  background-position: -19px 0;
+}
 a:hover .icon-user {
   background-position: -19px 0;
 }
@@ -4430,4 +4433,33 @@ a:hover .icon-confirm,
   .calc-table table td {
     display: block;
   }
+}
+.account {
+  margin-bottom: 100px;
+}
+.account__hint {
+  margin-bottom: 20px;
+}
+.account__hint a {
+  color: #e22c49;
+}
+.account__old {
+  color: #e22c49;
+  margin-bottom: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+.account__login {
+  margin-bottom: 50px;
+}
+.account__login input {
+  margin-bottom: 30px;
+}
+.account__btn {
+  width: 195px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.account .list-styled {
+  margin-bottom: 60px;
 }
