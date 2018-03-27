@@ -101,6 +101,7 @@ a:hover {
   color: #fff;
   box-shadow: 0 10px 15px rgba(226,44,74,.3);
 }
+
 .btn[aria-expanded=true],
 .btn[aria-expanded=false]:hover {
   background: #f83352!important;
@@ -1726,7 +1727,7 @@ a:hover .sub-menu-toggle svg path {
 @media (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (-webkit-min-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   [class^='icon-'], [class*=' icon-'] {
     background-image: url('../i/sprite2x.png');
-    background-size: 2758px 172px;
+    background-size: 2770px 172px;
   }
 }
 .icon-values {
@@ -2103,6 +2104,11 @@ a:hover .icon-confirm,
   width: 67px;
   height: 66px;
   background-position: -2556px -78px;
+}
+.icon-calculator4 {
+  width: 68px;
+  height: 67px;
+  background-position: -2701px -76px;
 }
 .icon-calc {
   width: 16px;
@@ -3058,16 +3064,22 @@ a:hover .icon-confirm,
 .poll-form {
   margin-top: 30px
 }
-.radio input[type=radio] {
+.radio input[type=radio],
+.checkbox input[type=checkbox] {
   display: none;
 }
-.radio label {
+.radio label,
+.checkbox label {
   position: relative;
   padding-left: 30px;
   cursor: pointer;
   margin-bottom: 10px;
 }
-.radio label:before {
+.checkbox label {
+  padding-left: 35px;
+}
+.radio label:before,
+.checkbox label:before {
   content: '';
   display: block;
   width: 20px;
@@ -3078,6 +3090,9 @@ a:hover .icon-confirm,
   position: absolute;
   left: 0;
   top: 4px;
+}
+.checkbox label:before {
+  border-radius: 5px;
 }
 .radio input:checked + label:after {
   content: '';
@@ -3091,7 +3106,17 @@ a:hover .icon-confirm,
   left: 7px;
   top: 11px;
 }
-
+.checkbox input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 3px;
+  top: 8px;
+  width: 14px;
+  height: 12px;
+  background: url('../i/sprite.png') no-repeat;
+  background-position: -617px  -33px;
+}
 .button-toggle {
   padding: 0;
   cursor: pointer;
@@ -3547,6 +3572,15 @@ a:hover .icon-confirm,
 }
 .option__item:hover {
   box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+.option_static .option__item:hover {
+  box-shadow: none;
+}
+.option_static .option__item:hover .option__name {
+  color: #000;
+}
+.option_static .option__btn {
+  cursor: default;
 }
 .option__btn {
   cursor: pointer;
@@ -4335,5 +4369,65 @@ a:hover .icon-confirm,
     white-space: nowrap;
     font-weight: bold;
     color: #000;
+  }
+}
+.calc-search .btn-round {
+  width: 100px;
+}
+@media (min-width: 992px) {
+  .calc-search .btn-round {
+    width: 195px;
+  }
+}
+.calc-search {
+  margin-top: 0;
+}
+.calc-search .subscribe-form__field {
+  margin-bottom: 40px;
+}
+.calc-search__subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.calc-search .checkbox label {
+  margin-bottom: 25px;
+}
+.calc-search__checks {
+  margin-bottom: -25px;
+}
+.calc-table {
+  padding-top: 40px;
+}
+.calc-table__title {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+.calc-table table {
+  width: 100%;
+  line-height: 25px;
+  margin-bottom: 100px;
+}
+.calc-table table th {
+  font-weight: normal;
+  padding: 30px;
+  border: 2px solid #eee;
+  text-align: center;
+}
+.calc-table table td {
+  padding: 30px;
+  border: 2px solid #eee;
+  vertical-align: top;
+}
+.calc-table table th:first-of-type {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .calc-table table th {
+    display: none;
+  }
+  .calc-table table td {
+    display: block;
   }
 }
